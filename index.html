@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="src/output.css">
+  </head>
+  <body>
+    
+  <nav class="flex justify-between max-w-full px-5 flex-col items-center md:flex-row  ">
+   <ul>
+    <li><h1 class="font-sans text-5xl">TODO</h1></li>
+   </ul>
+   <ul class="flex gap-9 my-2">
+    <li><a href="#" class="hover:underline transition-all">About todo</a></li>
+    <li><a href="#" class="hover:underline transition-all">Previous tasks</a></li>
+   </ul>
+  </nav>
+
+  <main class="max-w-full bg-slate-200 flex justify-center mt-24 gap-2">
+    <input type="text" placeholder="Enter your task" class="h-10 text-xl rounded-lg border border-gray-800 " id="TaskInput">
+    <button class="h-10 text-xl rounded-lg border border-gray-800 w-28" id="Submit">Submit</button>
+  </main>
+
+  <div class="tasks max-w-full flex items-center mt-20 flex-col " id="TasksCon">
+    <h1 class="font-sans text-5xl mb-12">Your Tasks</h1>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</html>
